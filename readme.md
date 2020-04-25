@@ -1,12 +1,12 @@
-# imagemin-pngquant [![Build Status](https://travis-ci.org/imagemin/imagemin-pngquant.svg?branch=master)](https://travis-ci.org/imagemin/imagemin-pngquant)
+# imagemin-pngquant ![Node CI](https://github.com/mole-inc/imagemin-pngquant/workflows/Node%20CI/badge.svg)
 
-> [Imagemin](https://github.com/imagemin/imagemin) plugin for [`pngquant`](https://github.com/kornelski/pngquant)
+> [Imagemin](https://github.com/imagemin/imagemin) plugin for [`pngquant`](https://github.com/mole-inc/pngquant)
 
 
 ## Install
 
 ```
-$ npm install imagemin-pngquant
+$ npm install @mole-inc/imagemin-pngquant
 ```
 
 
@@ -14,7 +14,7 @@ $ npm install imagemin-pngquant
 
 ```js
 const imagemin = require('imagemin');
-const imageminPngquant = require('imagemin-pngquant');
+const imageminPngquant = require('@mole-inc/imagemin-pngquant');
 
 (async () => {
 	await imagemin(['images/*.png'], 'build/images', {
@@ -25,6 +25,15 @@ const imageminPngquant = require('imagemin-pngquant');
 
 	console.log('Images optimized');
 })();
+```
+
+```js
+const fs = require('fs');
+const {pngquantStream} = require('@mole-inc/imagemin-pngquant');
+
+const src = fs.createReadStream('foo.png');
+const dest = fs.createWriteStream('bar.png');
+pngquantStream({quality: [0.3, 0.5]})(src).pipe(dest);
 ```
 
 
@@ -93,3 +102,13 @@ Print verbose status messages.
 Type: `Buffer | Stream`
 
 Buffer or stream to optimize.
+
+### pngquantStream(options?)(input)
+
+Returns `Readable`.
+
+## License
+
+This is a fork of [imagemin/imagemin-pngquant](https://github.com/imagemin/imagemin-pngquant).
+
+see license file.

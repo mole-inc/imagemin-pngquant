@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+	  "module": "CommonJS",
+	  "moduleResolution": "Node",
+	  "target": "ES2018",
+	  "lib": [],
+	  "outDir": "lib",
+	  "typeRoots": [],
+	  "noImplicitAny": true,
+	  "strictNullChecks": true,
+	  "noFallthroughCasesInSwitch": true,
+	  "noImplicitReturns": true,
+	  "noImplicitThis": true,
+	  "noUnusedLocals": true,
+	  "noUnusedParameters": true,
+	  "alwaysStrict": true,
+	  "sourceMap": false,
+	  "emitDecoratorMetadata": true,
+	  "esModuleInterop": true,
+	  "experimentalDecorators": true,
+	  "forceConsistentCasingInFileNames": true,
+	  "listFiles": false,
+	  "stripInternal": true,
+	  "skipDefaultLibCheck": true,
+	  "pretty": true,
+	  "noEmitOnError": true,
+	  "declaration": true,
+	  "types": ["node"]
+	},
+	"include": [
+	  "src/**/*.ts"
+	]
+  }
