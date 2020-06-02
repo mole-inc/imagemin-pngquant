@@ -19,7 +19,8 @@
 		"release": "standard-version"
 	},
 	"files": [
-		"lib"
+		"lib",
+		"src"
 	],
 	"main": "lib/index.js",
 	"types": "lib/index.d.ts",
@@ -33,7 +34,7 @@
 		"pngquant"
 	],
 	"dependencies": {
-		"@mole-inc/pngquant-bin": "^6.0.0",
+		"@mole-inc/pngquant-bin": "^7.0.0",
 		"execa": "^4.0.0",
 		"is-png": "^2.0.0",
 		"is-stream": "^2.0.0",
@@ -48,7 +49,7 @@
 		"husky": "^4.2.5",
 		"nyc": "^15.0.1",
 		"rimraf": "^3.0.2",
-		"standard-version": "^7.1.0",
+		"standard-version": "^8.0.0",
 		"typescript": "^3.8.3",
 		"xo": "^0.30.0"
 	},
