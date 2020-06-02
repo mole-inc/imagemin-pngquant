@@ -100,8 +100,4 @@ const pngquantStream = (options: Options = {}) => (input: Readable) => {
 	return subprocess.stdout;
 };
 
-export default imageminPngquant;
-export {pngquantStream};
-
-module.exports = imageminPngquant;
-module.exports.pngquantStream = pngquantStream;
+export {imageminPngquant, pngquantStream};

@@ -3,8 +3,7 @@ const path = require('path');
 const test = require('ava');
 const getStream = require('get-stream');
 const isPng = require('is-png');
-const imageminPngquant = require('../lib');
-const {pngquantStream} = require('../lib');
+const {imageminPngquant, pngquantStream} = require('../lib');
 
 test('optimize a PNG', async t => {
 	const buffer = fs.readFileSync(path.join(__dirname, 'fixtures', 'fixture.png'));
