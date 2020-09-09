@@ -1,6 +1,6 @@
 {
 	"name": "@mole-inc/imagemin-pngquant",
-	"version": "10.0.0",
+	"version": "11.0.0",
 	"description": "Imagemin plugin for `pngquant`",
 	"license": "MIT",
 	"repository": {
