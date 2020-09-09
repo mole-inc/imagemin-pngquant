@@ -2,6 +2,9 @@
 
 > [Imagemin](https://github.com/imagemin/imagemin) plugin for [`pngquant`](https://github.com/mole-inc/pngquant)
 
+[![Downloads](https://badgen.net/npm/dm/@mole-inc/imagemin-pngquant)](https://www.npmjs.com/package/@mole-inc/imagemin-pngquant)
+[![Version](https://badgen.net/npm/v/@mole-inc/imagemin-pngquant)](https://www.npmjs.com/package/@mole-inc/imagemin-pngquant)
+[![codecov](https://codecov.io/gh/mole-inc/imagemin-pngquant/branch/master/graph/badge.svg)](https://codecov.io/gh/mole-inc/imagemin-pngquant)
 
 ## Install
 
